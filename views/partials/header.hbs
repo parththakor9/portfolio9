@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/"><img src="/images/logo.jpg" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://github.com/DattBPatel" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/datt-patel-a6a683254/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/_dattu._15/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fas fa-envelope"></i></a></li>
+                
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // Toggle menu for mobile view
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
